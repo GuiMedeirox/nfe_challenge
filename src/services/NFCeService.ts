@@ -1,4 +1,4 @@
-
+import { Builder } from 'xml2js';
 export class NFCeService  {
 
     async getByRef(){
@@ -6,8 +6,8 @@ export class NFCeService  {
     }
 
     parseToXML(obj: Object){
-        console.log(obj);
-        return obj;
+        const builder = new Builder();
+        return builder.buildObject(obj);
     }
 
 
