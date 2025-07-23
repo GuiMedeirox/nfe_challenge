@@ -10,13 +10,16 @@ export interface Product {
   icms?: {
     cst: string;
     aliquota: number;
+    total:number
   };
   pis?: {
     cst: string;
     aliquota: number;
+    total: number
   };
   cofins?: {
     cst: string;
     aliquota: number;
+    total:number
   };
 } 
